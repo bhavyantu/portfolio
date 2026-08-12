@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Bhavya Enjamuri</title>
+
+
+    <!-- INTERNAL CSS -->
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #111827;
+
+            color: white;
+
+        }
+
+        header {
+
+            background: #0b1120;
+
+            padding: 20px 0;
+
+        }
+
+        nav {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .logo {
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+        }
+
+        .logo span {
+
+            color: #60a5fa;
+
+        }
+
+        nav a {
+
+            color: #d1d5db;
+
+            text-decoration: none;
+
+            margin-left: 22px;
+
+            font-size: 14px;
+
+        }
+
+        nav a:hover {
+
+            color: #60a5fa;
+
+        }
+
+        .container {
+
+            width: 90%;
+
+            max-width: 1000px;
+
+            margin: auto;
+
+        }
+
+        .contact {
+
+            min-height: 650px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+        .contact h1 {
+
+            font-size: 50px;
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+
+        }
+
+        .contact h1 span {
+
+            color: #60a5fa;
+
+        }
+
+        .contact-text p {
+
+            color: #9ca3af;
+
+            margin-bottom: 30px;
+
+        }
+
+        .details {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+
+        }
+
+        .detail {
+
+            padding: 20px;
+
+            border: 1px solid #374151;
+
+            border-radius: 10px;
+
+        }
+
+        .detail small {
+
+            display: block;
+
+            color: #6b7280;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 5px;
+
+        }
+
+        .detail a {
+
+            color: #e5e7eb;
+
+            text-decoration: none;
+
+        }
+
+        .detail a:hover {
+
+            color: #60a5fa;
+
+        }
+
+        .form {
+
+            background: #1f2937;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+        }
+
+        .form h2 {
+
+            margin-bottom: 20px;
+
+        }
+
+        input,
+        textarea {
+
+            width: 100%;
+
+            padding: 13px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #374151;
+
+            border-radius: 6px;
+
+            background: #111827;
+
+            color: white;
+
+            outline: none;
+
+        }
+
+        textarea {
+
+            height: 130px;
+
+            resize: vertical;
+
+        }
+
+        input:focus,
+        textarea:focus {
+
+            border-color: #60a5fa;
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background: #1d4ed8;
+
+        }
+
+        footer {
+
+            background: #0b1120;
+
+            color: #6b7280;
+
+            text-align: center;
+
+            padding: 25px;
+
+        }
+
+        @media(max-width: 750px) {
+
+            .contact {
+
+                grid-template-columns: 1fr;
+
+                padding: 70px 0;
+
+            }
+
+            nav div:last-child {
+
+                display: none;
+
+            }
+
+            .contact h1 {
+
+                font-size: 40px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Bhavya<span> Enjamuri</span>
+            </div>
+
+            <div>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\index.html">Home</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\about.html">About</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\gallery.html">Gallery</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\contact.html">Contact</a>
+
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT -->
+
+    <main class="container">
+
+        <section class="contact">
+
+
+            <div class="contact-text">
+
+                <h1>
+                    Let's
+                    <span>Connect.</span>
+                </h1>
+
+                <p>
+                    I'm interested in AI engineering, Generative AI,
+                    automation, software development opportunities
+                    and meaningful collaborations.
+                </p>
+
+
+                <div class="details">
+
+
+                    <div class="detail">
+
+                        <small>EMAIL</small>
+
+                        <a href="mailto:bhavyantuenjamuri@gmail.com">
+                            bhavyantuenjamuri@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <small>PHONE</small>
+
+                        <a href="tel:+918639663423">
+                            +91 8639663423
+                        </a>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <small>LINKEDIN</small>
+
+                        <a
+                            href="https://linkedin.com/in/bhavya-enjamuri-90a355378"
+                            target="_blank">
+
+                            linkedin.com/in/bhavya-enjamuri-90a355378
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="form">
+
+                <h2>
+                    Send a Message
+                </h2>
+
+                <form>
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        required>
+
+                    <textarea
+                        placeholder="Your Message"
+                        required></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Bhavya Enjamuri
+
+    </footer>
+
+
+</body>
+
+</html>

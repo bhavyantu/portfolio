@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Bhavya Enjamuri</title>
+
+
+    <!-- INTERNAL CSS -->
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #f1f5f9;
+
+            color: #172033;
+
+        }
+
+        header {
+
+            background: white;
+
+            border-bottom: 1px solid #ddd;
+
+            padding: 20px 0;
+
+        }
+
+        nav {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+        }
+
+        .logo {
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+        }
+
+        .logo span {
+
+            color: #2563eb;
+
+        }
+
+        nav a {
+
+            text-decoration: none;
+
+            color: #374151;
+
+            margin-left: 20px;
+
+            font-size: 14px;
+
+        }
+
+        nav a:hover {
+
+            color: #2563eb;
+
+        }
+
+        .container {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+        }
+
+        .title {
+
+            text-align: center;
+
+            padding: 70px 0 40px;
+
+        }
+
+        .title h1 {
+
+            font-size: 45px;
+
+        }
+
+        .title span {
+
+            color: #2563eb;
+
+        }
+
+        .title p {
+
+            color: #6b7280;
+
+            margin-top: 10px;
+
+        }
+
+        .gallery {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 25px;
+
+            padding-bottom: 80px;
+
+        }
+
+        .project {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            border: 1px solid #e5e7eb;
+
+            transition: 0.3s;
+
+        }
+
+        .project:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.08);
+
+        }
+
+        .number {
+
+            color: #2563eb;
+
+            font-weight: bold;
+
+            font-size: 13px;
+
+        }
+
+        .project h2 {
+
+            margin: 15px 0;
+
+        }
+
+        .project p {
+
+            color: #6b7280;
+
+            font-size: 14px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+        }
+
+        .tags span {
+
+            background: #eff6ff;
+
+            color: #1d4ed8;
+
+            padding: 6px 10px;
+
+            border-radius: 5px;
+
+            font-size: 11px;
+
+        }
+
+        .skills {
+
+            background: #111827;
+
+            color: white;
+
+            padding: 50px 0;
+
+            margin-top: 20px;
+
+        }
+
+        .skills h2 {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .skill-list {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+        }
+
+        .skill-list span {
+
+            padding: 10px 15px;
+
+            border: 1px solid #374151;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+        }
+
+        footer {
+
+            background: #0b1120;
+
+            color: #9ca3af;
+
+            padding: 25px;
+
+            text-align: center;
+
+        }
+
+        @media(max-width: 700px) {
+
+            .gallery {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            nav div:last-child {
+
+                display: none;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Bhavya<span> Enjamuri</span>
+            </div>
+
+            <div>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\index.html">Home</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\about.html">About</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\gallery.html">Gallery</a>
+
+                <a href="C:\Users\bhavy\OneDrive\Desktop\bhavya-projects\portfolio2\contact.html">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- TITLE -->
+
+    <section class="title">
+
+        <div class="container">
+
+            <h1>
+                My <span>Projects</span>
+            </h1>
+
+            <p>
+                AI, automation and web development projects
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="container">
+
+        <div class="gallery">
+
+
+            <div class="project">
+
+                <span class="number">
+                    PROJECT 01
+                </span>
+
+                <h2>
+                    AI Gmail Auto Reply Assistant
+                </h2>
+
+                <p>
+                    Built an automated email-response workflow
+                    using n8n orchestration and a Groq-hosted LLM,
+                    triggered through the Gmail API to draft and
+                    send contextual replies in real time.
+                </p>
+
+                <div class="tags">
+
+                    <span>n8n</span>
+
+                    <span>Groq</span>
+
+                    <span>AI</span>
+
+                    <span>Automation</span>
+
+                    <span>Gmail API</span>
+
+                    <span>LLM</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="number">
+                    PROJECT 02
+                </span>
+
+                <h2>
+                    Smart Email Categorization
+                </h2>
+
+                <p>
+                    Designed a workflow that automatically
+                    classifies incoming emails by intent or
+                    category and routes them to appropriate
+                    response templates.
+                </p>
+
+                <div class="tags">
+
+                    <span>n8n</span>
+
+                    <span>AI</span>
+
+                    <span>Automation</span>
+
+                    <span>Groq</span>
+
+                    <span>Gmail API</span>
+
+                    <span>APIs</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="number">
+                    PROJECT 03
+                </span>
+
+                <h2>
+                    AI Skill Gap Analyzer
+                </h2>
+
+                <p>
+                    Built a web application that compares a user's
+                    current skill set against target job roles and
+                    uses AI-driven analysis to generate personalized
+                    recommendations.
+                </p>
+
+                <div class="tags">
+
+                    <span>AI</span>
+
+                    <span>Web Development</span>
+
+                    <span>LLM</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="number">
+                    PROJECT 04
+                </span>
+
+                <h2>
+                    Portfolio Website
+                </h2>
+
+                <p>
+                    Designed and built a responsive personal
+                    portfolio website to showcase projects,
+                    technical skills and professional profile.
+                </p>
+
+                <div class="tags">
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <span class="number">
+                    PROJECT 05
+                </span>
+
+                <h2>
+                    College Podcast Planner Website
+                </h2>
+
+                <p>
+                   A role-based college podcast management website
+                   with three login levels: Admin, Faculty and Student.
+
+                   Admin has complete access to create and edit plans.
+                   Faculty can view and edit assigned podcast plans.
+                   Students have view-only access to podcast content.
+                </p>
+
+                <div class="tags">
+
+                    <span>AI</span>
+
+                    <span>Web Development</span>
+
+            
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="skills">
+
+        <div class="container">
+
+            <h2>
+                Technologies I Work With
+            </h2>
+
+            <div class="skill-list">
+
+                <span>Python</span>
+
+                <span>Java</span>
+
+                <span>C</span>
+
+                <span>SQL</span>
+
+                <span>JavaScript</span>
+
+                <span>Prompt Engineering</span>
+
+                <span>LLM Applications</span>
+
+                <span>NLP</span>
+
+                <span>LangChain</span>
+
+                <span>n8n</span>
+
+                <span>REST APIs</span>
+
+                <span>Git</span>
+
+                <span>GitHub</span>
+
+                <span>Pandas</span>
+
+                <span>NumPy</span>
+
+                <span>Firebase</span>
+
+                <span>Supabase</span>
+
+                <span>MongoDB</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Bhavya Enjamuri
+
+    </footer>
+
+
+</body>
+
+</html>
